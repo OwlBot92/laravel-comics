@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  /* UPPER NAV */
+  /* LOWER NAV */
+}
+
+nav .upper-nav {
+  background-color: #0282f9;
+}
+
+nav .upper-nav ul {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .upper-nav ul li {
+  padding: 3px;
+}
+
+nav .upper-nav ul li a {
+  color: whitesmoke;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+nav .upper-nav ul li:last-child {
+  margin-left: 100px;
+}
+
+nav .lower-nav {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .lower-nav .logo-box {
+  display: flex;
+  align-items: center;
+  width: 5%;
+}
+
+nav .lower-nav .logo-box img {
+  width: 60px;
+}
+
+nav .lower-nav .list-box {
+  width: 85%;
+}
+
+nav .lower-nav .list-box ul {
+  padding: 40px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .lower-nav .list-box ul li {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+nav .lower-nav .search-box {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+nav .lower-nav .search-box input {
+  width: 100%;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  position: relative;
+  padding-top: 120px;
+}
+
+.jumbotron #jumb {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+}
+
+main {
+  margin-top: 300px;
+  background-color: #1c1c1c;
+}
+
+main .comics-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+}
+
+main .comics-box .comic-card {
+  width: calc(100% / 6);
+  padding: 10px;
+}
+
+main .comics-box .comic-card h2 {
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+main .comics-box a {
+  padding: 10px 25px;
+  background-color: #0282f9;
+  color: white;
+  font-size: 12px;
+  margin: 20px auto 0 auto;
+}
+

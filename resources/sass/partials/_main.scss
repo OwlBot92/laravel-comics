@@ -1,0 +1,31 @@
+main{
+    margin-top: 300px;
+    background-color: $color-dark;
+    .comics-box{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        width: $center-content;
+        margin: auto;
+        .comic-card{
+            width: calc(100% / 6);
+            padding: 10px;
+
+            h2{
+                font-size: $xs-font;
+                color: whitesmoke;
+            }
+        }
+
+        a{
+            
+            padding: 10px 25px;
+            background-color: $color-main;
+            color: white;
+            font-size: $xs-font;
+            margin: 20px auto 0 auto;
+        }
+
+    }
+}
