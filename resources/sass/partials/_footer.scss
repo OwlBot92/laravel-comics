@@ -1,0 +1,93 @@
+
+footer{
+   background-color: #292929;
+    
+    .wrapper{
+        background-color: #303030;
+        
+        .upper-footer{
+            
+            width: $center-content;
+            margin: auto;
+            display: flex;
+            .left-side{
+                padding: 40px 0;
+                width: 40%;
+                display: flex;
+                .column{
+                    margin-right: 15px;
+                    ul{
+                        li{
+                            color: #9c9c9c;
+                            font-size: 13px;
+                            margin-bottom: 5px;
+                            h4{
+                                color: whitesmoke;
+                                padding: 15px 0;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .right-side{
+                overflow: hidden;
+                width: 60%;
+                position: relative;
+                
+                position: relative;
+                img{
+                    width: 500px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        
+        .footer-footer{
+            background-color: #2c2c2c;
+            
+            .wrapper{
+
+                padding: 20px 0;
+                background-color: #2c2c2c;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                
+                width: $center-content;
+                margin: auto;
+                .sign-up-btn{
+                    background-color: #303030;
+                    border: 1px solid $color-main;
+                    padding: 15px 30px;
+                    color: whitesmoke;
+                }
+    
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        h4{
+                            color: $color-main;
+                        }
+                    }
+                    li{
+                        img{
+                            width: 40px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

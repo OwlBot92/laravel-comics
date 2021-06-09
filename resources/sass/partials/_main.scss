@@ -120,6 +120,7 @@ main{
         background-color: #f6f6f6;
         border-top: 2px solid #e6e6e6;
         padding-top: 30px;
+        padding-bottom: 60px;
         h3{
             color: #003f53;
             padding: 20px 0;
@@ -182,7 +183,7 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 15px 160px 15px 0;
+                    padding: 15px 70px 15px 0;
                     border-top: 2px solid #e6e6e6;
                     div:last-child{
                         span{
@@ -196,7 +197,7 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 15px 160px 15px 0;
+                    padding: 15px 70px 15px 0;
                     border-top: 2px solid #e6e6e6;
 
                 }
@@ -205,11 +206,10 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 15px 160px 15px 0;
+                    padding: 15px 70px 15px 0;
                     border-top: 2px solid #e6e6e6;
                     border-bottom: 2px solid #e6e6e6;
                 }
-
             }
         }
     }

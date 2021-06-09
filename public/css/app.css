@@ -96,7 +96,6 @@ nav .lower-nav .search-box input {
   width: 100%;
   z-index: -1;
   position: absolute;
-  left: 0;
 }
 
 main {
@@ -215,6 +214,7 @@ main .white {
   background-color: #f6f6f6;
   border-top: 2px solid #e6e6e6;
   padding-top: 30px;
+  padding-bottom: 60px;
 }
 .description-box .lower-box h3 {
   color: #003f53;
@@ -274,7 +274,7 @@ main .white {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 160px 15px 0;
+  padding: 15px 70px 15px 0;
   border-top: 2px solid #e6e6e6;
 }
 .description-box .lower-box .wrapper .right-side .series div:last-child span {
@@ -285,14 +285,86 @@ main .white {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 160px 15px 0;
+  padding: 15px 70px 15px 0;
   border-top: 2px solid #e6e6e6;
 }
 .description-box .lower-box .wrapper .right-side .sale-date {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 160px 15px 0;
+  padding: 15px 70px 15px 0;
   border-top: 2px solid #e6e6e6;
   border-bottom: 2px solid #e6e6e6;
+}
+
+footer {
+  background-color: #292929;
+}
+footer .wrapper {
+  background-color: #303030;
+}
+footer .wrapper .upper-footer {
+  width: 75%;
+  margin: auto;
+  display: flex;
+}
+footer .wrapper .upper-footer .left-side {
+  padding: 40px 0;
+  width: 40%;
+  display: flex;
+}
+footer .wrapper .upper-footer .left-side .column {
+  margin-right: 15px;
+}
+footer .wrapper .upper-footer .left-side .column ul li {
+  color: #9c9c9c;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+footer .wrapper .upper-footer .left-side .column ul li h4 {
+  color: whitesmoke;
+  padding: 15px 0;
+}
+footer .wrapper .upper-footer .right-side {
+  overflow: hidden;
+  width: 60%;
+  position: relative;
+  position: relative;
+}
+footer .wrapper .upper-footer .right-side img {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .wrapper .footer-footer {
+  background-color: #2c2c2c;
+}
+footer .wrapper .footer-footer .wrapper {
+  padding: 20px 0;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
+footer .wrapper .footer-footer .wrapper .sign-up-btn {
+  background-color: #303030;
+  border: 1px solid #0282f9;
+  padding: 15px 30px;
+  color: whitesmoke;
+}
+footer .wrapper .footer-footer .wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .wrapper .footer-footer .wrapper ul li h4 {
+  color: #0282f9;
+}
+footer .wrapper .footer-footer .wrapper ul li img {
+  width: 40px;
+  margin-left: 15px;
 }
