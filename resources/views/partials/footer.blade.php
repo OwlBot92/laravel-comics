@@ -55,7 +55,7 @@
         </div>
 
         <div class="footer-footer">
-            <div class="wrapper">
+            <div class="wrapper-footer">
                 <a href="" class="sign-up-btn">SIGN-UP NOW</a>
     
                 <ul>

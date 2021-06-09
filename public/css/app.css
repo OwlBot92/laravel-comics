@@ -301,7 +301,7 @@ footer {
   background-color: #292929;
 }
 footer .wrapper {
-  background-color: #303030;
+  background-image: url("../img/footer-bg.jpg");
 }
 footer .wrapper .upper-footer {
   width: 75%;
@@ -341,7 +341,7 @@ footer .wrapper .upper-footer .right-side img {
 footer .wrapper .footer-footer {
   background-color: #2c2c2c;
 }
-footer .wrapper .footer-footer .wrapper {
+footer .wrapper .footer-footer .wrapper-footer {
   padding: 20px 0;
   background-color: #2c2c2c;
   display: flex;
@@ -350,21 +350,21 @@ footer .wrapper .footer-footer .wrapper {
   width: 75%;
   margin: auto;
 }
-footer .wrapper .footer-footer .wrapper .sign-up-btn {
+footer .wrapper .footer-footer .wrapper-footer .sign-up-btn {
   background-color: #303030;
   border: 1px solid #0282f9;
   padding: 15px 30px;
   color: whitesmoke;
 }
-footer .wrapper .footer-footer .wrapper ul {
+footer .wrapper .footer-footer .wrapper-footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer .wrapper .footer-footer .wrapper ul li h4 {
+footer .wrapper .footer-footer .wrapper-footer ul li h4 {
   color: #0282f9;
 }
-footer .wrapper .footer-footer .wrapper ul li img {
+footer .wrapper .footer-footer .wrapper-footer ul li img {
   width: 40px;
   margin-left: 15px;
 }
