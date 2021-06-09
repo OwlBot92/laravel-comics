@@ -121,7 +121,7 @@ main .container .comics-box .comic-card h2 {
   font-size: 12px;
   color: whitesmoke;
 }
-main .container .comics-box a {
+main .container .comics-box #btn-azure {
   padding: 10px 25px;
   background-color: #0282f9;
   color: white;

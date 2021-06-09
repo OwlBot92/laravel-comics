@@ -10,13 +10,15 @@
         
                 @foreach ($comics_array as $comic)
                 <div class="comic-card">
-                    <img src="{{ $comic['thumb'] }}" alt="">
+                    <a href="{{ route('comic', ['id' => $comic['id']]) }}">
+                        <img src="{{ $comic['thumb'] }}" alt="">
+                    </a>
                     <h2>{{ $comic['series'] }}</h2>
                 </div>
                 @endforeach
     
                 
-                <a href="">LOAD MORE</a>
+                <a id="btn-azure" href="">LOAD MORE</a>
             </div>
         </div>
 
