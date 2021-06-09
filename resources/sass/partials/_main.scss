@@ -1,30 +1,124 @@
 main{
     margin-top: 300px;
-    background-color: $color-dark;
-    .comics-box{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        display: flex;
-        flex-wrap: wrap;
+    .container{
+        background-color: $color-dark;
+        min-height: 550px;
+        .comics-box{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            width: $center-content;
+            margin: auto;
+            .comic-card{
+                width: calc(100% / 6);
+                padding: 10px;
+    
+                h2{
+                    font-size: $xs-font;
+                    color: whitesmoke;
+                }
+            }
+    
+            a{
+                padding: 10px 25px;
+                background-color: $color-main;
+                color: white;
+                font-size: $xs-font;
+                margin: 20px auto 0 auto;
+            }
+    
+        }
+    }
+
+
+
+
+    .white{
+        background-color: whitesmoke;
+    }
+}
+
+.blue-img-stripe{
+    background-color: $color-main;
+    min-height: 60px;
+    width: 100%;
+}
+
+.description-box{
+    background-color: white;
+    padding-top: 30px;
+    
+    .upper-box{
         width: $center-content;
         margin: auto;
-        .comic-card{
-            width: calc(100% / 6);
-            padding: 10px;
-
-            h2{
-                font-size: $xs-font;
-                color: whitesmoke;
+        display: flex;
+        .left-side{
+            width: 70%;
+            .availability-box{
+                background-color: #55ba59;
+                display: flex;
+                border-bottom: 2px solid #397f3d;
+                .left-side{
+                    padding: 10px 0;
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    #price{
+                        margin-left: 30px;
+                    }
+                    #available{
+                        margin-right: 30px;
+                    }
+                }
+                .right-side{
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-left: 2px solid #397f3d;
+                }
             }
         }
 
-        a{
-            padding: 10px 25px;
-            background-color: $color-main;
-            color: white;
-            font-size: $xs-font;
-            margin: 20px auto 0 auto;
+        .right-side{
+            margin-left: 30px;
+            h5{
+                text-align: right;
+            }
+            img{
+                margin-top: 10px;
+                width: 100%;
+            }
         }
+    }
 
+    .lower-box{
+        background-color: #f6f6f6;
+        border-top: 2px solid #e6e6e6;
+        .wrapper{
+            width: $center-content;
+            margin: auto;
+            display: flex;
+            .left-side{
+                width: 50%;
+
+                .artists-box{
+                    .art-by{
+                        border-top: 2px solid #e6e6e6;
+                    }
+
+                    .written-by{
+                        border-top: 2px solid #e6e6e6;
+                        border-bottom: 2px solid #e6e6e6;
+                    }
+                }
+            }
+    
+            .right-side{
+                width: 50%;
+            }
+        }
     }
 }

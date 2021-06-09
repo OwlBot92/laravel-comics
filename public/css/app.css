@@ -100,9 +100,12 @@ nav .lower-nav .search-box input {
 
 main {
   margin-top: 300px;
-  background-color: #1c1c1c;
 }
-main .comics-box {
+main .container {
+  background-color: #1c1c1c;
+  min-height: 550px;
+}
+main .container .comics-box {
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
@@ -110,18 +113,97 @@ main .comics-box {
   width: 75%;
   margin: auto;
 }
-main .comics-box .comic-card {
+main .container .comics-box .comic-card {
   width: calc(100% / 6);
   padding: 10px;
 }
-main .comics-box .comic-card h2 {
+main .container .comics-box .comic-card h2 {
   font-size: 12px;
   color: whitesmoke;
 }
-main .comics-box a {
+main .container .comics-box a {
   padding: 10px 25px;
   background-color: #0282f9;
   color: white;
   font-size: 12px;
   margin: 20px auto 0 auto;
+}
+main .white {
+  background-color: whitesmoke;
+}
+
+.blue-img-stripe {
+  background-color: #0282f9;
+  min-height: 60px;
+  width: 100%;
+}
+
+.description-box {
+  background-color: white;
+  padding-top: 30px;
+}
+.description-box .upper-box {
+  width: 75%;
+  margin: auto;
+  display: flex;
+}
+.description-box .upper-box .left-side {
+  width: 70%;
+}
+.description-box .upper-box .left-side .availability-box {
+  background-color: #55ba59;
+  display: flex;
+  border-bottom: 2px solid #397f3d;
+}
+.description-box .upper-box .left-side .availability-box .left-side {
+  padding: 10px 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.description-box .upper-box .left-side .availability-box .left-side #price {
+  margin-left: 30px;
+}
+.description-box .upper-box .left-side .availability-box .left-side #available {
+  margin-right: 30px;
+}
+.description-box .upper-box .left-side .availability-box .right-side {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #397f3d;
+}
+.description-box .upper-box .right-side {
+  margin-left: 30px;
+}
+.description-box .upper-box .right-side h5 {
+  text-align: right;
+}
+.description-box .upper-box .right-side img {
+  margin-top: 10px;
+  width: 100%;
+}
+.description-box .lower-box {
+  background-color: #f6f6f6;
+  border-top: 2px solid #e6e6e6;
+}
+.description-box .lower-box .wrapper {
+  width: 75%;
+  margin: auto;
+  display: flex;
+}
+.description-box .lower-box .wrapper .left-side {
+  width: 50%;
+}
+.description-box .lower-box .wrapper .left-side .artists-box .art-by {
+  border-top: 2px solid #e6e6e6;
+}
+.description-box .lower-box .wrapper .left-side .artists-box .written-by {
+  border-top: 2px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+}
+.description-box .lower-box .wrapper .right-side {
+  width: 50%;
 }
