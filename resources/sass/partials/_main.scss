@@ -31,9 +31,6 @@ main{
         }
     }
 
-
-
-
     .white{
         background-color: whitesmoke;
     }
@@ -43,6 +40,15 @@ main{
     background-color: $color-main;
     min-height: 60px;
     width: 100%;
+    position: relative;
+    z-index: 0;
+    img{
+        width: 150px;
+        position: absolute;
+        top: -190px;
+        left: 150px;
+        z-index: -1;
+    }
 }
 
 .description-box{
@@ -53,8 +59,18 @@ main{
         width: $center-content;
         margin: auto;
         display: flex;
+        padding-bottom: 60px;
         .left-side{
             width: 70%;
+            h2{
+                padding: 10px 0;
+            }
+            p{
+                padding: 10px 0;
+                line-height: 24px;
+                font-size: $xs-font;
+                font-weight: 600;
+            }
             .availability-box{
                 background-color: #55ba59;
                 display: flex;
@@ -67,9 +83,14 @@ main{
                     justify-content: space-between;
                     #price{
                         margin-left: 30px;
+                        color: #bafa8f;
+                        span{
+                            color: whitesmoke;
+                        }
                     }
                     #available{
                         margin-right: 30px;
+                        color: #bafa8f;
                     }
                 }
                 .right-side{
@@ -78,6 +99,7 @@ main{
                     align-items: center;
                     justify-content: center;
                     border-left: 2px solid #397f3d;
+                    color: whitesmoke;
                 }
             }
         }
@@ -97,27 +119,97 @@ main{
     .lower-box{
         background-color: #f6f6f6;
         border-top: 2px solid #e6e6e6;
+        padding-top: 30px;
+        h3{
+            color: #003f53;
+            padding: 20px 0;
+        }
+        #comma{
+            color: $color-dark;
+        }
         .wrapper{
             width: $center-content;
             margin: auto;
             display: flex;
             .left-side{
                 width: 50%;
-
                 .artists-box{
                     .art-by{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px 0;
                         border-top: 2px solid #e6e6e6;
+                        .h-box{
+                            width: 30%;
+                        }
+                        .artists-array{
+                            width: 70%;
+                            margin-right: 10px;
+                            color: #1fb0e1;
+                            font-weight: 600;
+                            font-size: $xs-font;
+                        }
                     }
 
                     .written-by{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px 0;
                         border-top: 2px solid #e6e6e6;
                         border-bottom: 2px solid #e6e6e6;
+
+                        .h-box{
+                            width: 30%;
+                        }
+                        .writers-array{
+                            width: 70%;
+                            margin-right: 10px;
+                            color: #1fb0e1;
+                            font-weight: 600;
+                            font-size: $xs-font;
+                        }
                     }
                 }
             }
     
             .right-side{
+                padding-left: 60px;
                 width: 50%;
+
+                .series{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px 160px 15px 0;
+                    border-top: 2px solid #e6e6e6;
+                    div:last-child{
+                        span{
+                            color: #1fb0e1;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                .price{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px 160px 15px 0;
+                    border-top: 2px solid #e6e6e6;
+
+                }
+
+                .sale-date{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px 160px 15px 0;
+                    border-top: 2px solid #e6e6e6;
+                    border-bottom: 2px solid #e6e6e6;
+                }
+
             }
         }
     }

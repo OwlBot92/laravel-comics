@@ -45,7 +45,7 @@
 ] --}}
     <div class="container white">
         <div class="blue-img-stripe">
-            <img src="" alt="">
+            <img src="{{$selected_comic['thumb']}}" alt="">
         </div>
 
         <div class="description-box">
@@ -81,15 +81,15 @@
 
                         <div class="artists-box">
                             <div class="art-by">
-                                <div>
-                                    <span>Art by:</span>
+                                <div class="h-box">
+                                    <h5>Art by:</h5>
                                 </div>
 
-                                <div>
+                                <div class="artists-array">
 
                                     @foreach ($selected_comic['artists'] as $artist)
                                         @if (!$loop->last)    
-                                            <span>{{$artist}}, </span>
+                                            <span>{{$artist}} <span id="comma">, </span></span> 
                                         @endif
 
                                         <span>{{$artist}} </span>
@@ -100,14 +100,14 @@
                             </div>
 
                             <div class="written-by">
-                                <div>
-                                    <span>Written by:</span>
+                                <div class="h-box">
+                                    <h5>Written by:</h5>
                                 </div>
 
-                                <div>
+                                <div class="writers-array">
                                      @foreach ($selected_comic['writers'] as $writer)
                                         @if (!$loop->last)    
-                                            <span>{{$writer}}, </span>
+                                            <span>{{$writer}}<span id="comma">, </span></span>
                                         @endif
 
                                         <span>{{$writer}} </span>

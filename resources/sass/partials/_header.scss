@@ -3,6 +3,7 @@ nav{
     position: fixed;
     width: 100%;
     background-color: white;
+    z-index: 999;
     /* UPPER NAV */
     .upper-nav{
         background-color: $color-main;

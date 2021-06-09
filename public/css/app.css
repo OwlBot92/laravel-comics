@@ -24,6 +24,7 @@ nav {
   position: fixed;
   width: 100%;
   background-color: white;
+  z-index: 999;
   /* UPPER NAV */
   /* LOWER NAV */
 }
@@ -136,6 +137,15 @@ main .white {
   background-color: #0282f9;
   min-height: 60px;
   width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.blue-img-stripe img {
+  width: 150px;
+  position: absolute;
+  top: -190px;
+  left: 150px;
+  z-index: -1;
 }
 
 .description-box {
@@ -146,9 +156,19 @@ main .white {
   width: 75%;
   margin: auto;
   display: flex;
+  padding-bottom: 60px;
 }
 .description-box .upper-box .left-side {
   width: 70%;
+}
+.description-box .upper-box .left-side h2 {
+  padding: 10px 0;
+}
+.description-box .upper-box .left-side p {
+  padding: 10px 0;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 600;
 }
 .description-box .upper-box .left-side .availability-box {
   background-color: #55ba59;
@@ -164,9 +184,14 @@ main .white {
 }
 .description-box .upper-box .left-side .availability-box .left-side #price {
   margin-left: 30px;
+  color: #bafa8f;
+}
+.description-box .upper-box .left-side .availability-box .left-side #price span {
+  color: whitesmoke;
 }
 .description-box .upper-box .left-side .availability-box .left-side #available {
   margin-right: 30px;
+  color: #bafa8f;
 }
 .description-box .upper-box .left-side .availability-box .right-side {
   width: 30%;
@@ -174,6 +199,7 @@ main .white {
   align-items: center;
   justify-content: center;
   border-left: 2px solid #397f3d;
+  color: whitesmoke;
 }
 .description-box .upper-box .right-side {
   margin-left: 30px;
@@ -188,6 +214,14 @@ main .white {
 .description-box .lower-box {
   background-color: #f6f6f6;
   border-top: 2px solid #e6e6e6;
+  padding-top: 30px;
+}
+.description-box .lower-box h3 {
+  color: #003f53;
+  padding: 20px 0;
+}
+.description-box .lower-box #comma {
+  color: #1c1c1c;
 }
 .description-box .lower-box .wrapper {
   width: 75%;
@@ -198,12 +232,67 @@ main .white {
   width: 50%;
 }
 .description-box .lower-box .wrapper .left-side .artists-box .art-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
   border-top: 2px solid #e6e6e6;
 }
+.description-box .lower-box .wrapper .left-side .artists-box .art-by .h-box {
+  width: 30%;
+}
+.description-box .lower-box .wrapper .left-side .artists-box .art-by .artists-array {
+  width: 70%;
+  margin-right: 10px;
+  color: #1fb0e1;
+  font-weight: 600;
+  font-size: 12px;
+}
 .description-box .lower-box .wrapper .left-side .artists-box .written-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
   border-top: 2px solid #e6e6e6;
   border-bottom: 2px solid #e6e6e6;
 }
+.description-box .lower-box .wrapper .left-side .artists-box .written-by .h-box {
+  width: 30%;
+}
+.description-box .lower-box .wrapper .left-side .artists-box .written-by .writers-array {
+  width: 70%;
+  margin-right: 10px;
+  color: #1fb0e1;
+  font-weight: 600;
+  font-size: 12px;
+}
 .description-box .lower-box .wrapper .right-side {
+  padding-left: 60px;
   width: 50%;
+}
+.description-box .lower-box .wrapper .right-side .series {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 160px 15px 0;
+  border-top: 2px solid #e6e6e6;
+}
+.description-box .lower-box .wrapper .right-side .series div:last-child span {
+  color: #1fb0e1;
+  text-transform: uppercase;
+}
+.description-box .lower-box .wrapper .right-side .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 160px 15px 0;
+  border-top: 2px solid #e6e6e6;
+}
+.description-box .lower-box .wrapper .right-side .sale-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 160px 15px 0;
+  border-top: 2px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
 }
